@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
 
    // Allow images from localhost
    images: {
-      domains: ['localhost'],
+      domains: ['localhost',''],
    },
 };
 
