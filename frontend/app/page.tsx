@@ -101,7 +101,7 @@ export default function Home() {
               {article.cover && article.cover.url ? (
                 <Image
                   className="w-full h-48 object-cover"
-                  src={STRAPI_URL + article.cover.url}
+                  src={article.cover.url.startsWith('http') ? article.cover.url : STRAPI_URL + article.cover.url}
                   alt={article.title}
                   width={400}
                   height={192}
